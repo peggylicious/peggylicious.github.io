@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Area of a Triangle</title>
+    <script src="area.js"></script>
+    <style>
+        div{
+            background: rgba(229, 226, 226, 0.911);
+            width: 300px;
+            padding: 2%;
+        }
+        button{
+            background: rgb(179, 224, 179);
+            padding: 10px;
+            border-radius: 5px;
+            border-style: none; 
+        }
+    </style>
+</head>
+<body>
+    <h4>4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.</h4>
+    <p>The JavaScript program below uses Heron's Formula</p>
+    <div>
+        <h2>Triangle Area Calculator</h2>
+        <h1 id="display_here"></h1>
+        Enter a <input type="text" name="length" class="display"> <br><br>
+        Enter b <input type="text" name="breadth" class="display"> <br><br>
+        Enter c <input type="text" name="height" class="display"> <br><br>
+        <button id="demo" onclick="calArea()">calculate Area</button>
+    </div>
+</body>
+</html>
