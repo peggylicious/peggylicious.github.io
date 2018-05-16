@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Margaret Ogbor</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>HTML & CSS Practice Exercises</h1>
-    <p>Browse the links below for exercises</p>
-    <ol>
-        <li><a href="W3resource/w3resource.html">W3resource</a></li>
-        <li><a href="ALCwithGoogle3.0/alcwithgoogle.html">Udacity Front End web Developer</a></li>
-    </ol>
+    <!-- Static Nav Bar -->
+    <nav class="horizontal-nav">
+        <span class="dropdown">Mouse over me</span>
+        <ul class="horizontal-ul">
+            <li class="nav-list"><a href="#" class="nav-anchor">Home</a></li>
+            <li class="nav-list"><a href="#" class="nav-anchor">HTML</a></li>
+            <li class="nav-list"><a href="#" class="nav-anchor">CSS</a></li>
+            <li class="nav-list"><a href="#" class="nav-anchor">JavaScript</a></li>
+            <li class="nav-list"><a href="#" class="nav-anchor">Jquery</a></li>
+            <!-- <li class="nav-list" id="nav-search"><a href="#" class="nav-anchor">Search</a></li> -->
+            <li class="nav-list" id="nav-search"><span>Search</span><input type="text"></li>
+    
+        </ul>
+    </nav>
+    <!-- Vertical Nav Bar -->
+    <nav class="vertical-nav">
+        <h1>HTML & CSS Practice Exercises</h1>
+        <p>Browse the links below for exercises</p>
+        <ul class="vertical-ul">
+            <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">W3resource</a></li>
+            <li class="vertical-list"><a href="ALCwithGoogle3.0/alcwithgoogle.html" class="vertical-anchor">Udacity Front End web Developer</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <h1>My Udacity Journey</h1>
+    </div>
 </body>
 </html>
