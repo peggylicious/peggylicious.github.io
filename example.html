@@ -6,97 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        @media only screen and (max-width: 992px){
-            .one{
+        @media only screen and (max-width: 600px){
+            /* .one{
                 display: block;
                 background: blue;
+            } */
+            ul{
+                display: block;
             }
         }
-        @media only screen and (min-width: 767px){
-            .one{
+        @media only screen and (min-width: 600px){
+            /* .one{
                 display: block;
                 background: red;
+            } */
+            ul{
+                visibility: hidden;
+                padding: 10p;
+                margin: 0;
+                height: 0;
+                width: 0;
+                background: blue;
+            }
+            li{
+                visibility: visible;
+            }
+            body{
+                margin: 0;
             }
         }
-
-
-
-.horizontal-nav{
-    /* background: rgba(41, 117, 179, 0.795); */
-    padding: 10px 10px 5px 10px;
-    margin: 0;
-}
-
-.horizontal-ul{
-    /* background: red; */
-    /* padding: 10px 0px; */
-    overflow: hidden;
-    color: inherit;
-}
-
-.nav-list{
-    /* background: yellow; */
-    list-style-type: none;
-    /* display: inline-block; */
-    padding-right: 20px;
-    font-size: 20px;
-    float: left;
-    color: inherit;
-}
-.nav-anchor{
-    /* background: green; */
-    text-decoration: none;
-    padding-right: 20px;
-    color: inherit;
-}
-#nav-search{
-    float: right;
-    padding-left: 20px;
-}
-
-
-/* **Vertical Nav Bar** */
-.vertical-nav{
-    /* background: yellow; */
-    width: 25%;
-    /* padding: 10px; */
-    float: left;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-    height: 500px;
-}
-.vertical-ul{
-    padding: 10px 0px ;
-    margin: 0px;
-}
-.vertical-list{
-    /* background: red; */
-    list-style-type: none;
-    padding-left: 0px;
-    padding-top: 10px;
-}
-.vertical-anchor{
-    text-decoration: none;
-    font-size: 18px;    
-}
-
-/* Main Page */
-
-.main{
-    float: left;
-    padding-left: 150px;
-}
-div > h1{
-    text-align: center;
-}
-
-
-
-
 
     </style>
 </head>
 <body>
-    <span class="one">For mobile</span>
-    <!-- <span >For Desktop</span> -->
+    <ul>Hide Me
+        <li>I am a Child</li>
+    </ul>
 </body>
 </html>
