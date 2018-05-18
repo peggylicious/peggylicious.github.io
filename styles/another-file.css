@@ -1,40 +1,12 @@
 
     .horizontal-nav{
         display: block;
-        width: 70%;
+        width: 100%;
         background-color: rgba(41, 117, 179);
         overflow: hidden;
         margin-top: 30px;
     }
-    .dropdown{
-        /* Hides the dropdown */
-        display: none;
-        padding-left: 10px;  
-    }
-    .horizontal-ul{
-        position: static;
-        list-style-type: none;
-        padding: 20px;
-    }
-    .horizontal-list{
-        
-    }
-    .horizontal-anchor{
-        float: left;
-        padding-right: 40px;
-        font-size: 18px;
-        font-weight: 700;
-        color: wheat;
-        text-decoration: none;
-    }
-    #horizontal-search{
-        float: right;
-        color: wheat;
-    }
     
-    .horizontal-ul>.horizontal-list{
-        
-    }
 
     /* *******Vertical Navigation Bar ****** */
 
