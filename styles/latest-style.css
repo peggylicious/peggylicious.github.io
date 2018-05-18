@@ -5,7 +5,7 @@ body{
     margin: 0px;
     /* You can take this off later to see the effect */  
 }
-@media only screen and (max-width: 640px) and (orientation: portrait){
+@media only screen and (orientation: portrait){
     /* Check this code */
     .vertical-ul .vertical-list:nth-child(3), .vertical-list:nth-child(4), .vertical-list:nth-child(5), .vertical-list:nth-child(6), .vertical-list:nth-child(7)
     {
@@ -113,7 +113,7 @@ body{
 }
 
 
-@media only screen and (min-width: 360px) and (orientation: landscape){
+@media only screen and (orientation: landscape){
     .horizontal-nav{
         display: block;
         width: 100%;
@@ -124,7 +124,7 @@ body{
     .dropdown{
         /* Hides the dropdown */
         display: none;
-        padding-left: 0px;  
+        padding-left: 10px;  
     }
     .horizontal-ul{
         position: static;
@@ -157,7 +157,7 @@ body{
         width: 25%;
         float: left;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        height: 600px;
+        /* height: 600px; */
         
     }
     .vertical-ul{
