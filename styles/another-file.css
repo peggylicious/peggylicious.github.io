@@ -1,59 +1,61 @@
-.horizontal-nav{
-    display: block;
-    width: 100%;
-    background-color: rgba(41, 117, 179);
-    overflow: hidden;
-    margin-top: 30px;
-}
-.dropdown{
-    /* Hides the dropdown */
-    display: none;
-    padding-left: 10px;  
-}
-.horizontal-ul{
-    position: static;
-    list-style-type: none;
-    padding: 20px;
-}
-.horizontal-list{
+@media only screen and (orientation: landscape){
+    .horizontal-nav{
+        display: block;
+        width: 100%;
+        background-color: rgba(41, 117, 179);
+        overflow: hidden;
+        margin-top: 30px;
+    }
+    .dropdown{
+        /* Hides the dropdown */
+        display: none;
+        padding-left: 10px;  
+    }
+    .horizontal-ul{
+        position: static;
+        list-style-type: none;
+        padding: 20px;
+    }
+    .horizontal-list{
+        
+    }
+    .horizontal-anchor{
+        float: left;
+        padding-right: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        color: wheat;
+        text-decoration: none;
+    }
+    #horizontal-search{
+        float: right;
+        color: wheat;
+    }
     
-}
-.horizontal-anchor{
-    float: left;
-    padding-right: 40px;
-    font-size: 18px;
-    font-weight: 700;
-    color: wheat;
-    text-decoration: none;
-}
-#horizontal-search{
-    float: right;
-    color: wheat;
-}
+    .horizontal-ul>.horizontal-list{
+        
+    }
 
-.horizontal-ul>.horizontal-list{
-    
-}
+    /* *******Vertical Navigation Bar ****** */
 
-/* *******Vertical Navigation Bar ****** */
-
-.vertical-nav{
-    width: 25%;
-    float: left;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    /* height: 600px; */
-    
-}
-.vertical-ul{
-    list-style-type: none;
-    /* Moves the vertical unordered to the extreme left */
-    padding: 0;
-    
-}
-.vertical-list{
-    padding: 10px;
-    font-weight: 600;
-}
-.vertical-anchor{
-    text-decoration: none;
+    .vertical-nav{
+        width: 25%;
+        float: left;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        /* height: 600px; */
+        
+    }
+    .vertical-ul{
+        list-style-type: none;
+        /* Moves the vertical unordered to the extreme left */
+        padding: 0;
+        
+    }
+    .vertical-list{
+        padding: 10px;
+        font-weight: 600;
+    }
+    .vertical-anchor{
+        text-decoration: none;
+    }
 }
