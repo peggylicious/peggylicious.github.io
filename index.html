@@ -11,7 +11,7 @@
     <!-- Static Nav Bar -->
     <div class="group">
         <div class="horizontal-nav">
-            <span class="dropdown">Courses</span> 
+            <span class="dropdown" onclick="hoverEffect()">Courses</span> 
             <ul class="horizontal-ul">
                 <li class="horizontal-list"><a href="#" class="horizontal-anchor">Home</a></li>
                 <li class="horizontal-list"><a href="#" class="horizontal-anchor">HTML</a></li>
@@ -48,5 +48,13 @@
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
     </div>
+
+
+
+    <script>
+        function hoverEffect(){
+            document.getElementsByClassName('dropdown')[0].innerHTML = "4";
+        }
+    </script>
 </body>
 </html>
