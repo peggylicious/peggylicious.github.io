@@ -184,13 +184,3 @@ body{
         color: red;
     }
 }
-.group{
-    background-color: rgba(41, 117, 179);
-    color: red;
-}
-@media only screen and (orientation: landscape){
-    .group{
-        background-color: rgba(41, 117, 179);
-        color: red;
-    } 
-}
