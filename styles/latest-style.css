@@ -179,4 +179,7 @@ body{
     #horizontal-search{
         display: none;
     }
+    .group{
+        background-color: rgba(41, 117, 179);
+    }
 }
