@@ -38,24 +38,4 @@
 
     /* *******Vertical Navigation Bar ****** */
 
-    .vertical-nav{
-        width: 25%;
-        float: left;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        /* height: 600px; */
-        
-    }
-    .vertical-ul{
-        list-style-type: none;
-        /* Moves the vertical unordered to the extreme left */
-        padding: 0;
-        
-    }
-    .vertical-list{
-        padding: 10px;
-        font-weight: 600;
-    }
-    .vertical-anchor{
-        text-decoration: none;
-    }
 }
