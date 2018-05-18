@@ -5,7 +5,7 @@ body{
     margin: 0px;
     /* You can take this off later to see the effect */  
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) and (orientation: portrait){
     /* Check this code */
     .vertical-ul .vertical-list:nth-child(3), .vertical-list:nth-child(4), .vertical-list:nth-child(5), .vertical-list:nth-child(6), .vertical-list:nth-child(7)
     {
@@ -111,7 +111,7 @@ body{
 }
 
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 600px) and (orientation: landscape){
     .horizontal-nav{
         display: block;
         width: 100%;
@@ -173,9 +173,9 @@ body{
     }
 }
 
-
-@media only screen and (max-width: 800px){
-    /* If screen is less than 800px and greater than 600px */
+/* If screen is less than 800px and greater than 600px */
+/* @media only screen and (max-width: 800px){
+    
     #horizontal-search{
         display: none;
     }
@@ -183,4 +183,9 @@ body{
         background-color: rgba(41, 117, 179);
         color: red;
     }
-}
+} */
+/* @media (orientation: landscape) and (max-width: 600){
+    body{
+        background-color: red;
+    }
+} */
