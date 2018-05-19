@@ -1,13 +1,92 @@
+body{
+    margin: 0;
+}
+.group{
+    width: 100%;
+    margin: 0;
+}
+.dropdown{
+    display: none;
+}
+/* Header */
+header{
+    /* sets the space inside the header */
+    padding: 10px;
+    /* background: red; */
+}
+h1 > span{
+    color: green;
+    font-weight: 500;
+}
+.header-heading, .header-paragraph{
+    /* closes the gap between header and the navigation */    
+    text-align: center;
+    margin: 0;
+}
+header h1{
+    font-family: 'lucida console';
+}
+.horizontal-ul {
+    overflow: hidden;
+    background-color: rgb(126, 126, 117);
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+    
+}
+.horizontal-list{
+    float: left;
+    /* sbackground: green; */
+}
+.horizontal-list .horizontal-anchor{
+    display: block;
+    /* background: palevioletred; */
+    padding: 14px 16px;   
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    /* margin: 5px; */
+}
+.horizontal-list .horizontal-anchor:hover{
+    background: aquamarine
+}
+#horizontal-search{
+    padding: 14px 16px; 
+    margin-left: 300px;
+    /* font-size: 18px; */
+    font-weight: 600;
+}
 
-    .group .horizontal-nav{
-        
-        background-color: rgba(41, 117, 179);
-        max-width: 100%;
-        
-    }
-    .horizontal-ul{
-        background: green;
-    }
+/* *******Vertical Navigation Bar ****** */
+.vertical-nav{
+    padding-top: 10px;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* background-color: rgba(41, 117, 179); */
+}
+.vertical-ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.vertical-list .vertical-anchor{
+   display: block;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-weight: 500;
+}
 
-    /* *******Vertical Navigation Bar ****** */
+.main{
+    float: left;
+    width: 75%;
+}
+.vertical-nav, .main{
+    height: 1200px;
+}
 
+/* .group .horizontal-nav{
+    margin: 0px;
+} */
