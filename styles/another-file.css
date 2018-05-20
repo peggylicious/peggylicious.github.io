@@ -1,10 +1,11 @@
 body{
     margin: 0;
 }
-.group{
-    width: 100%;
+/* .group{
+    
     margin: 0;
-}
+    max-height: 1000px;
+} */
 .dropdown{
     display: none;
 }
@@ -25,6 +26,8 @@ h1 > span{
 }
 header h1{
     font-family: 'lucida console';
+}
+.horizontal-nav{
 }
 .horizontal-ul {
     overflow: hidden;
@@ -59,15 +62,16 @@ header h1{
 
 /* *******Vertical Navigation Bar ****** */
 .vertical-nav{
+    
     padding-top: 10px;
-    width: 25%;
+    max-width: 25%;
     float: left;
-    overflow: hidden;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 1200px;
     /* background-color: rgba(41, 117, 179); */
 }
 .vertical-ul{
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -81,12 +85,16 @@ header h1{
 
 .main{
     float: left;
-    width: 75%;
+    max-width: 75%;
+    /* height: 1200px; */
+    /* height: 100%; */
 }
 .vertical-nav, .main{
-    height: 1200px;
+   
 }
-
+.wrap{
+    overflow: hidden;
+}
 /* .group .horizontal-nav{
     margin: 0px;
 } */
