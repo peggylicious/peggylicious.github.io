@@ -35,8 +35,9 @@ header h1{
 
 /* Horizontal nav */
 
-/* .horizontal-nav{
-} */
+.horizontal-nav{
+    display: block;
+}
 .horizontal-ul {
     overflow: hidden;
     background-color: rgb(126, 126, 117);
@@ -77,9 +78,9 @@ header h1{
     here is to give both floated divs(.main nd .vertical-nav), 
     same height. */
     padding-top: 10px;
-    padding-bottom: 500em;
-    margin-bottom: -500em;
-    max-width: 25%;
+    /* padding-bottom: 500em;
+    margin-bottom: -500em; */
+    /* max-width: 25%; */
     float: left;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     /* background-color: rgba(41, 117, 179); */
@@ -99,15 +100,15 @@ header h1{
 /* Main */
 .main{
     float: left;
-    max-width: 75%;
+    max-width: 60%;
     /* Giving .main same height with .vertical-nav */
-    padding-bottom: 500em;
-    margin-bottom: -500em;
+    /* padding-bottom: 500em;
+    margin-bottom: -500em; */
 }
 
-.wrap{
+/* .wrap{
     overflow: hidden;
-}
+} */
 
 /*************************************************/
 
@@ -120,10 +121,74 @@ header h1{
         background: red;
         display: none;
     }    */
+    .wrap{
+        background-color: rgb(126, 126, 117);
+
+          overflow: hidden;
+          /* margin: 0; */
+          padding: 20px 0px;
+        }
     .dropbtn{
-        display: inline;
+        /* display: none; */
+        display: inline-block;
+        width: 10%;
+        /* padding: 10px; */
+        margin: 0;
     }
+    
+     .horizontal-nav{
+        /* Removing position relative, reveals the dropdown menu properly */
+        /* position: relative; */
+        /* display: none; */
+        float: left;
+    }
+    .horizontal-ul{
+        display: none;
+        position: absolute;
+        background: black;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+    .horizontal-nav:hover .horizontal-ul{
+        display: block;
+    }
+
+    
     .vertical-nav{
+       float: left;
+       box-shadow: none;
+       background-color: rgb(126, 126, 117);
+       width: 80%;
+       padding: 0;
+       margin: 0;
+    }
+    .vertical-ul{
+        padding: 0px;
+        margin: 0px;    
+    }
+   .vertical-list{
+       float: left; 
+   }
+   .vertical-list .vertical-anchor{
+       display: inline;
+   }
+    .vertical-nav h3, .vertical-nav p{
+        display: none;
+    }
+    .main h1, .main p{
+        display: block;
+    }
+    .vertical-ul .vertical-list:nth-child(7), .vertical-list:nth-child(6), .vertical-list:nth-child(5), .vertical-list:nth-child(4), .vertical-list:nth-child(3)
+    {
+        background: red;
+        display: none;
+    }
+    .main{
+        max-width: 100%;
+    }
+    /* .vertical-nav{
         display: block;
     }
     .vertical-ul {
@@ -136,16 +201,13 @@ header h1{
     }
     .vertical-list{
         float: left;
-        /* background: green; */
     }
     .vertical-list .vertical-anchor{
         display: block;
-        /* background: palevioletred; */
         padding: 14px 16px;   
         text-decoration: none;
         font-weight: 600;
         color: white;
-        /* margin: 5px; */
     }
     .vertical .vertical-anchor:hover{
         background: aquamarine
@@ -156,7 +218,7 @@ header h1{
     }
     .main{
         display: block;
-    }
+    } */
 }
 
 @media only screen and (max-width: 200px){

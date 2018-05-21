@@ -6,41 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        @media only screen and (max-width: 600px){
-            /* .one{
-                display: block;
-                background: blue;
-            } */
-            ul{
-                display: block;
-            }
+        .vertical-nav h3, .vertical-nav p{
+            display: none;
         }
-        @media only screen and (min-width: 600px){
-            /* .one{
-                display: block;
-                background: red;
-            } */
-            ul{
-                visibility: hidden;
-                padding: 10p;
-                margin: 0;
-                height: 0;
-                width: 0;
-                background: blue;
-            }
-            li{
-                visibility: visible;
-            }
-            body{
-                margin: 0;
-            }
+        .vertical-nav{
+            float: left;
         }
-
+        .vertical-list{
+            float: left;
+        }
     </style>
 </head>
 <body>
-    <ul>Hide Me
-        <li>I am a Child</li>
-    </ul>
+    <div class="wrap">
+        <div class="vertical-nav"> 
+            <h3>HTML & CSS Practice Exercises</h3>
+            <p>Browse the below for exercises</p>
+            <ul class="vertical-ul">
+                <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">W3resource</a></li>
+                <li class="vertical-list"><a href="ALCwithGoogle3.0/alcwithgoogle.html" class="vertical-anchor">Udacity Front-End</a></li>
+                <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">Eloquent JS</a></li>
+                <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">Egghead.io</a></li>
+                <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">JS Exercises</a></li>
+                <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">W3schools</a></li>
+                <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">JavaScript.info</a></li>
+            </ul>
+            
+        </div>  
+    </div>
 </body>
 </html>
