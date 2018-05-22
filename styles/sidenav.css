@@ -35,7 +35,8 @@
     /* make both divs in the container equal height with overflow set to hidden in the containing element */
     padding-bottom: 500em;
     margin-bottom: -500em;
-    padding-left: 10px;
+    padding-left: 20px;
+    
 }
 
 /* Media QUERIES */
@@ -51,9 +52,12 @@
         display: block;
         width: 95%;
         padding-bottom: 0;
-        padding-left: 10px;
+        /* padding-left: 10px; */
         padding-right: 10px;
         margin-bottom: 0; 
         margin-right: 0;
+    }
+    body{
+        margin: 0px;
     }
 }

@@ -1,0 +1,32 @@
+#tweety, #insty , #fb, #slacky{
+    color: grey;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.2em;
+    display: inline-block;     
+    padding: 0;
+    text-align: center;
+}
+
+.twitter-icon, .twitter-icon a{
+    margin: auto;
+    padding-left: 10%;    
+    
+}
+hr{
+    padding: 0px 5px;
+}
+.twitter-icon p{
+    opacity: 0.75;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+    width: 500px;
+}
+.social-media{
+    display: block;
+    width: 500px;
+    text-align: center;
+}
+
+
+
