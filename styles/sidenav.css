@@ -56,6 +56,7 @@
         padding-right: 10px;
         margin-bottom: 0; 
         margin-right: 0;
+        padding-left: 10px; /* IMPORTANT */
     }
     body{
         margin: 0px;

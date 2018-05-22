@@ -20,13 +20,30 @@ hr{
     text-align: center;
     float: left;
     font-size: 15px;
-    width: 500px;
+    
+    /* background: red; */
+    padding-left: 0;
 }
 .social-media{
     display: block;
     width: 500px;
     text-align: center;
 }
+.twitter-icon{
+    overflow: hidden;
+    /* background: blue; */
+    width: 500px;
+    padding: 10px;
+}
 
 
-
+@media only screen and (max-width: 600px){
+    .twitter-icon .p{
+        padding-right: 0;
+        margin-right: 0;
+        
+    }
+    .twitter-icon{
+        width: 300px;
+    }
+}
