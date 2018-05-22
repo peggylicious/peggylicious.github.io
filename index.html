@@ -4,70 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Margaret Ogbor</title>
-    <link rel="stylesheet" href="./styles/version4.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/topnav.css">
+    <link rel="stylesheet" href="./styles/sidenav.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <h1 class="header-heading"><span>peggylicious.</span>github</h1>
         <p class="header-paragraph">A compilation of my learning activities</p>
     </header>
-    <!-- Static Nav Bar -->
-    <!-- <div class="group"> -->
-        <!-- Navigation -->
-        <div class="wrap">
-            <div class="horizontal-nav">
-                <span class="dropbtn" onclick="hoverEffect()">Courses</span> 
-                <ul class="horizontal-ul">
-                    <li class="horizontal-list"><a href="#" class="horizontal-anchor">Home</a></li>
-                    <li class="horizontal-list"><a href="#" class="horizontal-anchor">HTML</a></li>
-                    <li class="horizontal-list"><a href="#" class="horizontal-anchor">CSS</a></li>
-                    <li class="horizontal-list"><a href="#" class="horizontal-anchor">JavaScript</a></li>
-                    <li class="horizontal-list"><a href="#" class="horizontal-anchor">Jquery</a></li>
-                    <!-- <li class="nav-list" id="nav-search"><a href="#" class="nav-anchor">Search</a></li> -->
-                    <li class="horizontal-list" id="horizontal-search"><span>Search</span><input type="text"></li>
-                </ul>
-            </div>
-            <!-- Vertical Nav Bar -->
-        
-            <div class="vertical-nav">
-                
-                <h3>HTML & CSS Practice Exercises</h3>
-                <p>Browse the below for exercises</p>
-                
-
-                <ul class="vertical-ul">
-                    <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">W3resource</a></li>
-                    <li class="vertical-list"><a href="ALCwithGoogle3.0/alcwithgoogle.html" class="vertical-anchor">Udacity Front-End</a></li>
-                    <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">Eloquent JS</a></li>
-                    <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">Egghead.io</a></li>
-                    <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">JS Exercises</a></li>
-                    <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">W3schools</a></li>
-                    <li class="vertical-list"><a href="W3resource/w3resource.html" class="vertical-anchor">JavaScript.info</a></li>
-                </ul>
-                
-            </div>  
-        </div>     
-    <!-- </div> -->
-    <div class="main">
-        <h1>My Udacity Journey Changes Red is Green idth is 100%</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nam itaque possimus fuga aliquam minima ab, quod et praesentium maiores impedit tempora iusto, aperiam, nesciunt adipisci libero beatae deserunt velit? </p>    
-        <p>END</p>
+    <!-- Top Nav -->
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active"><i class="fa fa-home"></i></a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVASCRIPT</a>
+        <a href="">jQUERY</a>
+        <a href="#">SQL</a>
+        <a href="#">PHP</a>
+        <a href="#">PYTHON</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <form action="">
+           <span class="form-name">Search</span> <input type="text" id="search">
+        </form>
     </div>
-    
+    <!-- Side Nav -->
+    <div class="container">
+        <div class="sidenav" id="mySidenav">
+            <h3>HTML & CSS Practice Exercises</h3>
+            <p>Browse the below for exercises</p>
+            <a href="W3resource/w3resource.html">W3resource</a>
+            <a href="ALCwithGoogle3.0/alcwithgoogle.html">Udacity Front</a>
+            <a href="W3resource/w3resource.html">Eloquent JS</a>
+            <a href="W3resource/w3resource.html">Egghead.io</a>
+            <a href="W3resource/w3resource.html">JS Exercises</a>
+            <a href="W3resource/w3resource.html">W3schools</a>
+            <a href="W3resource/w3resource.html">JavaScript.info</a>
+        </div>
+        <!-- Main -->
+        <div class="main">  
+            <h1>Google Udacity Scholarship Program</h1>
+            <p>I started learning how to build websites in December of 2016, when I came across an wwww.edx.org mobile app on a friend's phone. In May of 2018, I signed up for the Andela udacity Scholarship program. The Andela program has assisted my drive to improve on my skills by introducing me to an online community of aspiring web developers from all over africa. There we share experiences, network and help each other with the courses problem sets from the Udacity Online School. Learning how to build websites has been a superb experience for me and I would love to pen a few of my experiences here.</p>
+            <p>** Skills I have learnt.**</p>
+            <ul>
+                <li>To use the Mozilla Development Network(MDN) and StackOverflow.</li>
+                <li>To build simple webpages using HTML.</li>
+                <li>Understanding the use of trees in data science.</li>
+                <li>Understanding the basics of Server.</li>
+                <li>Difference between a Client and a Server.</li>
+                <li>Understanding Local and External file paths.</li>
+                <li>Http and Https protocols</li>
+                <li>Difference between Tags and Elements</li>
+            </ul>
+            <p>** What has been easy? **</p>
+            <ul>
+                <li>Formatting the document using paragraph &ltp&gt tags, bold &ltb&gt tags, and emphasis &ltem&gt tags.</li>
+            </ul>
+            <p>** What has been difficult? **</p>
+            <ul>
+                <li>Letting go of the deprecated strike &ltstrike&gt tag and making use of the &lts&gt tag and &ltdel&gt tag, hich serve the same purpose to strile through a text.</li>
+            </ul>
+            <p>** How have you used the problem solving strategies from the first project to overcome challenges so far? **</p>
+            <footer>End</footer>
+        </div>   
+    </div>
 
 
-    <!-- <script>
-        function hoverEffect(){
-            document.getElementsByClassName('dropdown')[0].innerHTML = "4";
+
+
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-    </script> -->
+    </script>
 </body>
 </html>
