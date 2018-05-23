@@ -1,6 +1,30 @@
+/* Sets the horizontal size of the horizontal rule */
+.social-media hr{
+    width: 200px;
+    opacity: 0.3;
+}
+
+/* Sets the position relative to the positioned container of this class */
+/* i.e. the container of .social-media must have it's position set to relative */
+.social-media{
+    position: absolute;
+    bottom: 100px;;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+}
+
+/* Sets the spacing for .social individual elements for larger screens */
+.social{
+    padding: 10px 10px;
+    margin-left: 2px;
+    color: rgb(94, 87, 87);
+}
+
+/* sets the styling for the footer */
 .footer{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 20px;
     right: 20px;
     display: block;
@@ -11,34 +35,19 @@
     font-size: 14px;
     opacity: 0.65;
     margin: 0;
+    /* line-height: 1.5em; */
 }
 
-/* Sets the spacing for .social individual elements for larger screens */
-.social{
-    padding: 10px 10px;
-    margin-left: 2px;
-}
-
-/* Sets the position relative to the positioned container of this class */
-/* i.e. the container of .social-media must have it's position set to relative */
-.social-media{
-    position: absolute;
-    bottom: 80px;;
-    left: 10px;
-    right: 10px;
-    text-align: center;
-}
-
-/* Sets the horizontal size of the horizontal rule */
-hr{
-    width: 200px;
-}
 
 /* Media Query for screens less than 600px in width */
 @media only screen and (max-width: 600px){
+    /*  */
+    .main{
+        height: 1400px;
+    }
     /* Sets the height from the buttom f the page */
     .social-media{
-        bottom: 120px;
+        bottom: 170px;
     }
 
     /* Sets the width of the horizontal rule */
@@ -58,11 +67,17 @@ hr{
     .footer{
         left: 5px;
         right: 5px;
-        bottom: 10px;
+        bottom: 20px;
     }
 
     /* Sets the font size for smaller screens */
     .footer p{
-        font-size: 10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    .social-media{
+        bottom: 170px;
     }
 }
