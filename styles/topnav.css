@@ -6,12 +6,14 @@ body{
 /* Header */
 header{
     /* sets the space inside the header */
-    padding: 10px;
+    padding: 10px 0px;
+    /* overflow: hidden; */
     /* background: red; */
 }
 h1 > span{
     color: green;
     font-weight: 500;
+    
 }
 .header-heading, .header-paragraph{
     /* closes the gap between header and the navigation */    
@@ -83,6 +85,9 @@ header h1{
     .topnav a.icon{
         float: right;
         display: block;
+    }
+    header h1{
+        font-size: 25px;
     }
 }
 
