@@ -37,10 +37,10 @@ display_time();
 function get_current_time(){
     if (current_hour < 12){
     document.getElementById("display").innerHTML = `Today is : ${days_of_week[current_day]}`;
-    document.getElementById("display2").innerHTML = `The time is ${current_hour}AM : ${current_minute} : ${current_second}`;
+    document.getElementById("display2").innerHTML = `The time is ${current_hour} : ${current_minute} : ${current_second}AM`;
 }else{
     document.getElementById("display").innerHTML = `Today is : ${days_of_week[current_day]}`
-    document.getElementById("display2").innerHTML = `The time is ${current_hour}PM : ${current_minute} : ${current_second}`;
+    document.getElementById("display2").innerHTML = `The time is ${current_hour} : ${current_minute} : ${current_second}PM`;
 }
 
 "The time is " + current_hour + " : " + current_minute + " : " + current_second;
