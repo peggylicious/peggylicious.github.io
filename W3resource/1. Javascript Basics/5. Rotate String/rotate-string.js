@@ -27,7 +27,7 @@ function rotate_string(word){
         if (letter !== undefined) {
             new_word += letter;
         }else{
-            document.getElementsByClassName("display")[1].innerHTML = "Refresh page and enter another word";
+            document.getElementsByClassName("display")[1].innerHTML = "OOps... You entered a number.";
         } 
     }
     return document.getElementsByClassName("display")[0].innerHTML = new_word;
