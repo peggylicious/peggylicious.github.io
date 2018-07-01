@@ -43,7 +43,7 @@ function makeGrid(){
     // Button event to change color
     var paintCell;    
     paintCell = $('#colorPicker');
-    $(paintCell).on('change', function(  ){
+    $(paintCell).on('change', function(){
         addColor();
     });
 
