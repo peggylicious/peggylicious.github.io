@@ -76,7 +76,7 @@ function makeGrid(){
     let addBorder;
     addBorder = $('.redo-border');
     $(addBorder).on('click', function(){
-        $('table, tr, td').css('border', '1px solid ' + chosenColor);
+        $('table, tr, td').css('border', '1px solid black');
     })   
 
     // Change Border Color
