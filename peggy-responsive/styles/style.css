@@ -504,7 +504,7 @@ section{
         display: none;
     } */
     .second-hero{
-        height: 180vh;
+        height: 100vh;
     }
     
     .second-hero button{
@@ -562,6 +562,7 @@ section{
     }
     .second-hero{
         height: 85vh;
+        padding-bottom: 0;
     }
     .second-hero button{
         bottom: 0;
