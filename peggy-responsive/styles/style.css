@@ -12,17 +12,21 @@ header{
     font-family: 'Redressed', cursive;
     text-align: center;
 }
+
 header h1{
     margin: 0;
-    letter-spacing: 1em;
+    letter-spacing: .3em;
 }
+
 header h1 .heading-two{
     color: purple;
 }
+
 header h1 .heading-one{
     /* color: purple; */
     font-size: 48px;
 }
+
 .nav{
     background-color: rgb(68, 67, 67);
     font-size: 1em;
@@ -32,7 +36,11 @@ header h1 .heading-one{
 .home{
     float: left;
     width: 15%;
-    /* background: pink; */
+    background-color: #800080;
+}
+
+.home a{
+    margin: 0 auto;
 }
 
 .home a, .links>ul li a{
@@ -41,10 +49,12 @@ header h1 .heading-one{
     color: white;
     font-family: 'Sofia', cursive;
 }
+
 .links{
     float: left;
     width: 70%;
     /* font-family: 'Sofia', cursive; */
+    visibility: hidden;
 }
 
 .links>ul{
@@ -66,7 +76,7 @@ header h1 .heading-one{
     /* font-size: 16px; */
 }
 
-.links>ul>li a:hover{
+.links>ul>li a:hover, .home a:hover{
     background: black;
 }
 
@@ -79,25 +89,29 @@ header h1 .heading-one{
     
 }
 
-.wrapper{
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
+.ham .wrapper{
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    /* margin-left: 0 auto; */
+    display: block;
 }
 
-.wrapper div{
+.ham .wrapper div{
     height: 3px;
-    width: 25px;
+    width: 20px;
     margin: 3px auto;
     background-color: white;
 }
 
+.ham:hover{
+    background-color: black;
+}
 
 /* Main */
 
 .hero{
     background-image: url("../images/Sight_2016_09_20_181728_948.jpg");
-    background-size: 120%;
+    background-size: 160%;
     height: 50vh;
     background-repeat: no-repeat;
     background-position: 60% 10%;
@@ -109,7 +123,7 @@ header h1 .heading-one{
     width: 100%;
     height: 100%;
     /* background-color: rgba(128, 0, 128, 0.616); */
-    /* background-color: rgba(99, 96, 96, .4); */
+    background-color: rgba(99, 96, 96, .4);
     margin: 0;
 }
 
@@ -118,7 +132,7 @@ header h1 .heading-one{
     bottom: 0;
     left: 0;
     width: 100%;
-    color: white;   
+    color: white;
 }
 
 .info h1{
@@ -128,6 +142,7 @@ header h1 .heading-one{
     /* background-color: red; */
     text-align: right;
     font-size: 24px;
+    font-family: 'Redressed', cursive;
 }
 
 .info h3{
@@ -139,7 +154,6 @@ header h1 .heading-one{
 }
 .info p{
     display: none;
-
 }
 
 .main{
@@ -273,7 +287,8 @@ header h1 .heading-one{
 
 /* Thumbnails */
 section{
-    margin: 0 2.5em;
+    /* margin: 0 2.5em; */
+    margin: 0;
 }
 .thumbnail-container .thumbnail-image{
     background-repeat: no-repeat;
@@ -346,23 +361,216 @@ section{
     font-size: 10px;
 }
 
+.flyer-container{
+    position: absolute;
+    top: 70vh;
+    z-index: 2001;
+    width: 100%;
+    margin: 0 auto;
+    /* display: flex; */
+    /* overflow: hidden; */
+}
+
+
+.flyer-box{
+    /* float: left;
+    width: 33.33%; */
+    /* flex: 1; */
+}
+
+.flyer-box:last-child{
+    display: none;
+}
+.flyer{
+    background-size: 100%;
+    height: 180px;
+    max-width: 90%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.flyer-1{
+    background-image: url("../images/pf6.jpg");
+}
+.flyer-2{
+    background-image: url("../images/pf7.jpg");
+}
+.flyer-3{
+    background-image: url("../images/pf8.jpg");
+   
+}
+
+/* .flyer-box>div{
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+} */
+
+.flyer, .flyer-about{
+    margin: 0 auto;
+}
+.flyer-about{
+    max-width: 90%;
+    height: 180px;
+    background-color: white;
+    color: #5d5d5d;
+}
+
+.flyer-about h3{
+    display: block;
+    letter-spacing: .5em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.flyer-about p{
+    letter-spacing: .05em;
+    padding: 0 1em 1em 1em;
+}
+
+.flyer-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+.second-hero{
+    /* background-color: #6677BC; */
+    background-color: #800080;
+    height: 190vh;
+    width: 100%;
+    position: relative;
+}
+
+.second-hero button{
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 25%;
+    width: 120px;
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    /* font-size: 18px; */
+    color: #800080;
+    background-color: white;
+    margin: 0 auto;
+    border-bottom: 2px solid #800080;
+}
+
+
+
+@media only screen and (min-width: 320px){
+    header h1{
+        letter-spacing: .5em;
+    }
+
+    .info h1{
+        text-align: left;
+    }
+    .info h3{
+        text-align: left;
+        color: #800080;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+    .info p{
+        
+        display: block;
+        text-align: right;
+    }
+    .ham .wrapper div{
+        width: 20px;
+    }
+    .links{
+        visibility: visible;
+    }
+    .home, .ham{
+        width: 15%;
+    }
+    .links{
+        width: 70%;
+    }
+
+    .flyer-container{
+        top: 70vh;
+    }
+    /* .flyer-3{
+        display: none;
+    } */
+    .second-hero{
+        height: 180vh;
+    }
+    
+    .second-hero button{
+        margin: 0 auto;
+    }
+    
+}
 
 
 
 
+@media only screen and (min-width: 480px){
+    header h1{
+        letter-spacing: .5em;
+    }
+    .wrapper div{
+        width: 25px;
+    }
+    .home{
+        width: 10%;
+    }
+    .ham{
+        width: 10%;
+    }
+
+    .links{
+        width: 80%;
+    }
+    
+    /* .second-hero{
+        height: 200vh;
+    } */
+    
+    /* .flyer-container{
+        top: 70vh;
+    } */
 
 
+    .flyer-3{
+        /* display: none; */
+        /* display: inline; */
+    }
 
+    .flyer-container{
+        /* display: flex; */
+        overflow: hidden;
+        top: 70vh;
+    }
+    
+    
+    .flyer-box{
+        float: left;
+        width: 50%;
+        /* flex: 1; */
+    }
+    .second-hero{
+        height: 100vh;
+    }
+    .second-hero button{
+        bottom: 0;
+        margin: 0 auto;
+    }
+    
+    
+}
 
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 450px){
+    
+}
 
 
 
@@ -376,11 +584,27 @@ section{
     header h1{
         padding: 15px;
         margin: 0;
-        letter-spacing: 2em;
+        letter-spacing: 1.5em;
         /* text-align: center; */
     }
+
+    /* .wrapper{
+        margin-left: 50%;
+    } */
+
+    .ham{
+        width: 10%;
+    }
+
+    .links{
+        width: 80%;
+    }
+    .home{
+        width: 10%;
+    }
+
     .hero{
-        background-size: 100%;
+        background-size: 120%;
         height: 100vh;
         background-position: 40% 10%;
     }
@@ -395,6 +619,7 @@ section{
         
         /* height: 100px; */
     }
+
     .info h1{
         margin: 0;
         letter-spacing: .1em;
@@ -403,24 +628,21 @@ section{
         text-align: right;
         font-family: 'Redressed', cursive;
     }
+
     .info h3{
         text-align: left;
         letter-spacing: .1em;
         font-size: 20px;
         /* font-family: 'Sail', cursive; */
     }
+
     .info p{
         text-align: right;
         letter-spacing: .2em;
         display: block;
     }
 
-    .wrapper{
-        margin-left: 50%;
-    }
-
-    
-
+    /* Main */
     .main .story{
         padding: 0px 30px;
     }
@@ -450,17 +672,21 @@ section{
     .footer .social i{
         padding: 20px;
     }
+
     .underline-one h3{
         font-size: 1.2em;
         text-align: left;
         padding: 20px;
     }
+
     .underline-one ul{
         border-right: 2px solid white;
     }
+
     .underline-one{
         
     }
+
     .underline-one>ul>li a{
         font-size: 1em;
     }
@@ -475,11 +701,75 @@ section{
         float: left;
         width: 33.33%;
     }
+
+
+    .flyer-container{
+        display: flex;
+        /* overflow: hidden; */
+        top: 100vh;
+        width: 100%;
+        padding: 0 20px;
+    }
     
+    .flyer-box{
+        flex: 1;
+    }
+    .flyer-box:last-child{
+        display: initial;
+        flex: 1;
+    }
+
+    .second-hero{
+        height: 70vh;
+    }
+    .info{
+        /* width: 60%; */
+        width: 100%;
+        left: 0;
+        /* right: 50%; */
+    }
+    .info h1{
+        text-align: left;
+    }
+    .info h3{
+        /* letter-spacing: 0; */
+        font-size: 18px;
+        text-align: left;
+        color: #800080;
+    }
 }
 
 
+@media only screen and (min-width: 768px){
 
+    .ham{
+        width: 5%;
+    }
+
+    .links{
+        width: 90%;
+    }
+    .home{
+        width: 5%;
+    }
+
+    .info h1{
+        font-size: 3em;
+        letter-spacing: .5em;
+    }
+    .flyer-container{
+        display: flex;
+        /* overflow: hidden; */
+        top: 100vh;
+    }
+    
+    
+    .flyer-box{
+        /* float: left; */
+        /* width: 50%; */
+        flex: 1;
+    }
+}
 
 /* .hamburger{
     float: right;
