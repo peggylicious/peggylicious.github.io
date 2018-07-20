@@ -561,7 +561,7 @@ section{
         /* flex: 1; */
     }
     .second-hero{
-        height: 100vh;
+        height: 85vh;
     }
     .second-hero button{
         bottom: 0;
