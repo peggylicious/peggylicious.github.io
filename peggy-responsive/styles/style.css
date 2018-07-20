@@ -504,7 +504,7 @@ section{
         display: none;
     } */
     .second-hero{
-        height: 100vh;
+        height: 180vh;
     }
     
     .second-hero button{
@@ -572,8 +572,10 @@ section{
     
 }
 
-@media only screen and (min-width: 450px){
-    
+@media only screen and (min-width: 400px){
+    .second-hero {
+        height: 50hv;
+    }
 }
 
 
@@ -661,7 +663,7 @@ section{
     }
 
     .transit{
-        padding: 3em 1em 3em 1em;
+        padding: 3em 1em 0em 1em;
         transition: all, 1s;
         /* transform: translate(70px, 0px) rotate(360deg); */
     }
