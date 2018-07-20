@@ -167,14 +167,14 @@ header h1 .heading-one{
 }
 
 .story{
-    /* padding: 2em 10px 0 10px; */
+    padding: 2em 10px 0 10px;
     transition: padding, 1s;
 }
 
 .transit{
     display: block;
     padding-top: 0;
-    /* transition: padding, 1s; */
+    transition: padding, 1s;
     /* background-color: red; */
     /* transform: translate(70px, 0px) rotate(360deg); */
 }
@@ -504,7 +504,7 @@ section{
         display: none;
     } */
     .second-hero{
-        height: 100vh;
+        height: 180vh;
     }
     
     .second-hero button{

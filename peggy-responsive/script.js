@@ -19,17 +19,18 @@ function myFunction(){
 
 
     // Adds transition to .row-1 of the stories class
-function transitionElement(){
-        // let desiredPosition = 500;
-    let affectedElement = document.getElementsByClassName("row-1");
-    let element = document.getElementById("image-container");
-    let imageContainer = element.offsetHeight;
+            // let desiredPosition = 500;
 
-    if (window.pageYOffset >= imageContainer){
-        affectedElement[0].classList.add('transit');  
-    }else{
-        affectedElement[0].classList.remove('transit');
-    }
+// function transitionElement(){
+//     let affectedElement = document.getElementsByClassName("row-1");
+//     let element = document.getElementById("image-container");
+//     let imageContainer = element.offsetHeight;
+
+//     if (window.pageYOffset >= imageContainer){
+//         affectedElement[0].classList.add('transit');  
+//     }else{
+//         affectedElement[0].classList.remove('transit');
+//     }
 }
 
 
