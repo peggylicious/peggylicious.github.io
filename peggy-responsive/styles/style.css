@@ -663,7 +663,7 @@ section{
     }
 
     .transit{
-        padding: 3em 1em 0em 1em;
+        padding: 0em 1em 0em 1em;
         transition: all, 1s;
         /* transform: translate(70px, 0px) rotate(360deg); */
     }
