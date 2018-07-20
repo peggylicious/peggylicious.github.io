@@ -551,7 +551,7 @@ section{
     .flyer-container{
         /* display: flex; */
         overflow: hidden;
-        top: 70vh;
+        top: 60vh;
     }
     
     
@@ -652,7 +652,7 @@ section{
 
     .row-1{
         display: flex;
-        padding-top: 20em;
+        padding-top: 10em;
     }
 
     .row-1 .col{
