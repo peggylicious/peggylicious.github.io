@@ -28,7 +28,7 @@ header h1 .heading-one{
 }
 
 .nav{
-    background-color: rgb(68, 67, 67);
+    background-color: #444343;
     font-size: 1em;
     overflow: hidden;
 }
@@ -363,7 +363,7 @@ section{
 
 .flyer-container{
     position: absolute;
-    top: 70vh;
+    top: 65vh;
     z-index: 2001;
     width: 100%;
     margin: 0 auto;
@@ -439,7 +439,7 @@ section{
 .second-hero{
     /* background-color: #6677BC; */
     background-color: #800080;
-    height: 190vh;
+    height: 175vh;
     width: 100%;
     position: relative;
 }
@@ -456,8 +456,11 @@ section{
     /* font-size: 18px; */
     color: #800080;
     background-color: white;
+    font-weight: 700;
     margin: 0 auto;
-    border-bottom: 2px solid #800080;
+    border-bottom: 5px solid #800080;
+    /* outline-color: #e90ae9; */
+    /* border-bottom: 5px solid #444344; */
 }
 
 
