@@ -1,9 +1,9 @@
 @media only screen and (min-width: 400px){
     .logo{
-        background-color: red;
+        /* background-color: red; */
     }
     .container .hero{
-        background-size: 100%;
+        background-size: 150%;
         height: 70vh;
     }
     .hero .hero-intro h1{
@@ -17,7 +17,7 @@
 
 @media only screen and (min-width: 600px){
     .logo{
-        background-color: green;
+        /* background-color: green; */
     }
     .nav{
         display: inline-block;
@@ -68,7 +68,7 @@
 
 @media only screen and (min-width: 720px){
     .logo{
-        background-color: purple;
+        /* background-color: purple; */
     }
 
     .container .hero{
