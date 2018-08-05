@@ -1,0 +1,197 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid yellow; */
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+.container{
+    position: relative;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #25BAD0;
+    background-color: black;
+}
+header{
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.logo{
+    float: left;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+.logo a{
+    padding: 16px 16px;
+    color: #25BAD0;
+}
+
+.logo i{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #25BAD0;
+    color: transparent;
+    padding: 15px 15px;
+}
+
+.nav{
+    display: none;
+}
+
+.hamburger{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    /* padding: 18px 5px 18px 5px; */
+    padding: 12px 5px 12px 5px;
+    border: 1px solid white;
+}
+
+.hamburger div{
+    width: 25px;
+    height: 2px;
+    margin: 3px;
+    background-color: white;
+}
+
+.hamburger:hover{
+    border: 1px solid #25BAD0;
+}
+
+.container .hero{
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/peggy-black-full.jpg");
+    height: 70vh;
+    background-position:  50% 0;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    /* position: relative; */
+}
+.container .hero .overlay{
+    background-color: rgba(0, 0, 0, .3);
+    /* background-color: rgba(37, 186, 208, .4); */
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hero-intro{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: inherit;
+}
+.hero .hero-intro{
+    color: rgba(255,255,255,0.9);;
+    letter-spacing: 2px;
+}
+.hero .hero-intro h1{
+    /* margin: 0; */
+    font-size: 2rem;
+    font-weight: 400;
+}
+.hero .hero-intro h1 span{
+    color: #25BAD0;
+    font-weight: 700;
+}
+.hero .hero-intro p{
+    /* margin: 0; */
+    font-size: .875rem;
+}
+.hero .hero-intro button{
+    border: 2px solid #25BAD0;
+    color: #25BAD0;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.services{
+    background-color: #053740;
+    padding-bottom: 50px;
+}
+.services-intro{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.services .services-intro h1, .services .services-intro p{
+    margin: 0;
+    color: #25BAD0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.services .services-intro h1{
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.services .services-intro p{
+
+}
+.services-section-container{
+    overflow: hidden;
+    padding-right:40px; 
+    padding-left:40px; 
+}
+
+.services-section-1, .services-section-2, .services-section-3, .services-section-4{
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.service{
+    /* display: inline-block; */
+    height: 100px;
+    line-height: 100px;
+    width: 100px;
+    font-size: 28px;
+    border-radius: 50%;
+    background-color: #25BAD0;
+    text-align: center;
+    margin: 0 auto;
+    /* margin-right: 30px; */
+}
+
+.service-1{
+    /* float: left; */
+}
+
+.services-section-intro h4{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #25BAD0;
+    text-align: center;
+}
+
+.services-section-intro p{
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    margin: initial;
+}
