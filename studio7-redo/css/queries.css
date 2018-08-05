@@ -1,5 +1,5 @@
 @media only screen and (min-width: 400px){
-    /* .logo{
+    .logo{
         background-color: red;
     }
     .container .hero{
@@ -11,11 +11,11 @@
     }
     .hero .hero-intro p{
         font-size: .875rem;
-    } */
+    }
 }
 
 
-@media only screen and (min-width: 590px){
+@media only screen and (min-width: 600px){
     .logo{
         background-color: green;
     }

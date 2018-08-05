@@ -87,7 +87,7 @@ header{
     /* position: relative; */
 }
 .container .hero .overlay{
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .7);
     /* background-color: rgba(37, 186, 208, .4); */
     height: 100%;
     width: 100%;
