@@ -112,7 +112,7 @@ header{
     letter-spacing: 2px;
 }
 .hero .hero-intro h1{
-    /* margin: 0; */
+    margin: 0;
     font-size: 2rem;
     font-weight: 400;
 }
@@ -121,7 +121,7 @@ header{
     font-weight: 700;
 }
 .hero .hero-intro p{
-    /* margin: 0; */
+    margin: 0;
     font-size: .875rem;
 }
 .hero .hero-intro button{
