@@ -1,10 +1,10 @@
 @media only screen and (min-width: 400px){
     .logo{
-        background-color: red;
+        background-color: blue;
     }
     .container .hero{
         background-size: 175%;
-        height: 60vh;
+        height: 55vh;
     }
     .hero .hero-intro h1{
         font-size: 2rem;
