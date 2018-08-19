@@ -1,9 +1,8 @@
-@media only screen and (min-width: 400px){
+@media only screen and (min-width: 480px){
     .logo{
-        background-color: red;
+        /* background-color: red; */
     }
     .container .hero{
-        background-size: 150%;
         height: 55vh;
     }
     .hero .hero-intro h1{
@@ -39,13 +38,12 @@
         font-weight: 200;
         padding: 20px;
     }
-    
+
     .hamburger{
         display: none;
     }
 
     .container .hero{
-        background-size: 160%;
         height: 100vh;
     }
     .hero .hero-intro h1{
@@ -72,7 +70,6 @@
     }
 
     .container .hero{
-        background-size: 150%;
         background-position: 70% 50%;
         height: 100vh;
     }
@@ -84,7 +81,6 @@
     }
 
     .container .hero{
-        background-size: 100%;
         background-position: 70% 50%;
         height: 100vh;
     }

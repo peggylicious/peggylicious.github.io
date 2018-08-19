@@ -8,7 +8,7 @@ function myFunction(){
     let nav = document.getElementById("fix-header");
         // Gets the heigth of the header
     let sticky = nav.offsetTop;
-    
+
     if (window.pageYOffset > sticky){
         nav.classList.add("sticky");
     }else{
@@ -16,9 +16,7 @@ function myFunction(){
     }
 }
 
-
-
-    // Adds transition to .row-1 of the stories class
+// Adds transition to .row-1 of the stories class
 function transitionElement(){
         // let desiredPosition = 500;
     let affectedElement = document.getElementsByClassName("row-1");
@@ -26,7 +24,7 @@ function transitionElement(){
     let imageContainer = element.offsetHeight;
 
     if (window.pageYOffset >= imageContainer){
-        affectedElement[0].classList.add('transit');  
+        affectedElement[0].classList.add('transit');
     }else{
         affectedElement[0].classList.remove('transit');
     }

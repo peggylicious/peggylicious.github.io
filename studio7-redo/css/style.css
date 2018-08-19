@@ -5,32 +5,40 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
     margin: 0;
 }
+
 .container{
     position: relative;
 }
+
 a{
     text-decoration: none;
     font-size: 18px;
     color: white;
     text-transform: uppercase;
 }
+
 a:hover{
     color: #25BAD0;
     background-color: black;
 }
+
 header{
     height: 50px;
     line-height: 50px;
     background-color: rgba(0, 0, 0, .7);
-    /* background-color: yellowgreen; */
     position: absolute;
     top: 0;
     width: 100%;
     overflow: hidden;
     z-index: 1;
+    /* transition: background-color 5s; */
 }
 
 .logo{
@@ -56,6 +64,11 @@ header{
     display: none;
 }
 
+.sticky{
+    background-color: #053740;
+    position: fixed;
+    transition: all 5s;
+}
 .hamburger{
     display: inline-block;
     position: absolute;
@@ -84,10 +97,11 @@ header{
     background-image: url("../img/black-girl.jpg");
     height: 70vh;
     background-position:  50% 0;
-    background-size: 260%;
+    background-size: cover;
     background-repeat: no-repeat;
     /* position: relative; */
 }
+
 .container .hero .overlay{
     background-color: rgba(0, 0, 0, .7);
     /* background-color: rgba(37, 186, 208, .4); */
@@ -112,16 +126,17 @@ header{
     letter-spacing: 2px;
 }
 .hero .hero-intro h1{
-    margin: 0;
+    margin: 10px;
     font-size: 2rem;
     font-weight: 400;
+    /* padding: 10px; */
 }
 .hero .hero-intro h1 span{
     color: #25BAD0;
     font-weight: 700;
 }
 .hero .hero-intro p{
-    margin: 0;
+    margin: 20px;
     font-size: .875rem;
 }
 .hero .hero-intro button{
@@ -135,12 +150,14 @@ header{
 
 .services{
     background-color: #053740;
-    padding-bottom: 50px;
+    padding: 0px 10px;
 }
+
 .services-intro{
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
 .services .services-intro h1, .services .services-intro p{
     margin: 0;
     color: #25BAD0;
@@ -148,18 +165,17 @@ header{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .services .services-intro h1{
     font-weight: 400;
     font-size: 40px;
     text-transform: uppercase;
 }
-.services .services-intro p{
 
-}
 .services-section-container{
     overflow: hidden;
-    padding-right:40px; 
-    padding-left:40px; 
+    padding-right:40px;
+    padding-left:40px;
 }
 
 .services-section-1, .services-section-2, .services-section-3, .services-section-4{
@@ -181,9 +197,6 @@ header{
     /* margin-right: 30px; */
 }
 
-.service-1{
-    /* float: left; */
-}
 
 .services-section-intro h4{
     font-weight: 400;

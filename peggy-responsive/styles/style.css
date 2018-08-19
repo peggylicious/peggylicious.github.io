@@ -111,7 +111,7 @@ header h1 .heading-one{
 
 .hero{
     background-image: url("../images/Sight_2016_09_20_181728_948.jpg");
-    background-size: 160%;
+    background-size: cover;
     height: 50vh;
     background-repeat: no-repeat;
     background-position: 60% 10%;
@@ -610,7 +610,7 @@ section{
     }
 
     .hero{
-        background-size: 120%;
+        /* background-size: 120%; */
         height: 100vh;
         background-position: 40% 10%;
     }
