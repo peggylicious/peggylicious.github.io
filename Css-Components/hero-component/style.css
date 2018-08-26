@@ -6,7 +6,7 @@ body{
 .hero{
     background-image: url("images/peggy-black-full.jpg");
     height: 100vh;
-    float: left;
+    /* float: left; */
     transition: all 0.5s;
 }
 

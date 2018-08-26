@@ -26,17 +26,17 @@
 // Add an event listener
 
 window.addEventListener('click', function(e) {
-        let hero = document.getElementById("heros");
-        if (hero.className == "hero"){
-            hero.classList.remove('hero');
-            hero.classList.add('hero1');
-        }else if(hero.className == "hero1"){
-            hero.classList.remove('hero1');
-            hero.classList.add('hero2');
-        }else{
-            hero.classList.remove('hero2');
-            hero.classList.add('hero');
-        }
+    let hero = document.getElementById("heros");
+    if (hero.className == "hero"){
+        hero.classList.remove('hero');
+        hero.classList.add('hero1');
+    }else if(hero.className == "hero1"){
+        hero.classList.remove('hero1');
+        hero.classList.add('hero2');
+    }else{
+        hero.classList.remove('hero2');
+        hero.classList.add('hero');
+    }
 })
 
 
