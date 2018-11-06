@@ -12,7 +12,7 @@ p, h1, h2, h3{
 
 body{
     background-color: #45b7b8;
-    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    /* box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5); */
 }
 .container{
     height: 100vh;
