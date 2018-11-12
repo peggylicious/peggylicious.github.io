@@ -81,9 +81,6 @@ header{
     width: 15px;
 }
 .hamburger .ham:before, .hamburger .ham:after{
-    
-}
-.hamburger .ham:before, .hamburger .ham:after{
     content: "";
     position: absolute;
     background-color: white;
