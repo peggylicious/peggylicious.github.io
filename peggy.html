@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            border: 1px solid blue;
+            transition: 0.5s;
+        }
+        li {
+            border: 1px solid purple;
+            display: none;
+            transition: 0.5s;
+        }
+        ul:hover li {
+            display: list-item;
+            /* color: goldenrod; */
+        }
+        ul:hover li:hover {
+            display: list-item;
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>Menu
+            <li>List</li>
+            <li>List</li>
+            <li>List</li>
+            <li>List</li>
+        </ul>
+    </div>
+</body>
+</html>

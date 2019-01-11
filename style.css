@@ -4,168 +4,124 @@
     box-sizing: border-box;
     /* border: 1px solid black; */
 }
-    p, h1, h2, h3{
-        text-align: center;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    body{
-        background-color: #45b7b8;
-        /* box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5); */
-    }
-    .container{
-        height: 100vh;
-        position: relative;
-        width: 90%;  
-        margin: 0 auto;
-        box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
-    }
-    .center{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    h2{
-        font-family: 'Sacramento', cursive;
-        font-size: 40px;
-        font-weight: 200;
-    }
-    h1{
-        color: #ffffff;
-    }
-    p, span{
-        font-family: 'Open Sans', sans-serif;
-    }
-    header{
-        position: relative;
-        height: 50px;
-        background-color: #fff;
-        /* margin: 10px; */
-    }
-    /* Hamburger */
-    .hamburger{
-        background-color: red;
-        position: absolute;
-        top: 50%;
-        left: 20px;
-        transform: translate(0%, -50%);
-        height: 20px;
-        width: 30px;
-    }
-    .hamburger:after{
-        transform: rotate(180deg);
-        left: 0;
-        bottom: 0;
-        margin-bottom: 20px;
-    }
-    .hamburger::before{
-        transform: rotate(360deg);
-        left: 0;
-        top: 0;
-        margin-top: 20px;
-    }
-    .hamburger::before, .hamburger:after{
-        content: "";
-        border-left:  15px solid transparent;
-        border-right: 15px solid transparent;
-        border-top: 5px solid red;
-        position: absolute;
-    }
-    .hamburger .ham{
-        background-color: white;
-    }
-    .hamburger .ham, .hamburger .ham:before, .hamburger .ham:after{
-        height: 3px;
-        width: 15px;
-    }
-    .hamburger .ham:before, .hamburger .ham:after{
-        content: "";
-        position: absolute;
-        background-color: white;
-        top: -5px;
-    }
-    .hamburger .ham:after{
-        top: 5px;
-        background-color: white;
-    }
-
-    /* Dropdown */
-    .links{
-        background-color: #107274;
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: 90vh; 
-    }
-    ul{
-        /* display: none; */
-        list-style-type: none; 
-    }
-
-    .wrapper:hover .links{
-        display: block;
-        top: 50px;
-        position: absolute;
-        width: 100%;
-    }
-
-    /* Thumbnail */
-    .thumbnail-container{
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .thumbnail-container .image{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        border: 5px solid white;
-        margin: 20px auto;
-        background-image: url("./img/naomi_who.jpg");
-        background-size: 180%;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-    }
-
-    .image .overlay{
-        height: 100%;
-        background-color: rgba(0, 0, 0, .2);
-        border-radius: 50%;
-        
-    }
-    .arrow{
-        background-image: url("./img/arrow.svg");
-        width: 20px;
-        height: 20px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        display: inline-block;
-    }
-    button{
-        padding: 10px 0;
-        position: relative;
-        border: 1px solid white;;
-        width: 200px;
-        transform: translate(-50%, 0%);
-        left: 50%;
-        background-color: transparent;
-        border-radius: 5px;
-        /* background-color: blue; */
-    }
-    button:hover{
-        box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
-        font-weight: 700;
-    }
-
-    /* button */
-
-    button span{
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+    position: absolute;
+}
+body{
+    margin: 0 20px;
+    background-color: #45b7b8;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: navajowhite;
+}
+.container-1{
+    height: 100vh;
+    margin: 0 20px;
+    background-color: #45b7b8;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    /* display: none; */
+}
+header{
+    height: 50px;
+    /* line-height: 50px; */
+    background-color: #fff;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header a{
+    padding: 0 14px;
+    color: #000;
+}
+.img-container{
+    position: relative;
+    height: 50vh;
+}
+.img-container h2,
+.img-container p{
+    text-align: center;
+    color: #fff;
+}
+.img-container .img{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: absolute;
+    background-image: url("./img/naomi_who.jpg");
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 50%;
+    border-radius: 50%;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    border: 5px solid white;
+}
+.overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+}
+.name-section{
+    margin-top: 10px;
+    text-align: center;
+}
+.name-section h2,
+.name-section p{
+    margin-top: 5px;
+    text-align: center;
+}
+.name-section a{
+    display: inline-block;
+    margin-top: 5px;
+}
+.name{
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    font-weight: 200;
+}
+a button{
+    color: #000;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid #45b7b8;
+    border-radius: 5px;
+    background-color: #fff;
+    background-color: transparent;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid white;
+}
+a button:active{
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    transform: translateY(4px);
+    border: 5px inset #45b7b8;
+}
+button svg{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    opacity: 0;
+    transform: translate(0, -50%);
+    transition: opacity, right, 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    color: white;
+}
+button:hover svg{
+    opacity: 1;
+    right: 30px;
+}
