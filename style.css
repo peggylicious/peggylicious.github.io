@@ -56,6 +56,18 @@ header li{
 li{
     position: relative;
 }
+.main_list a{
+    width: 100%;
+    display: inline-block;
+    padding: 0 20px;
+    border: 1px solid #fff;
+}
+.main_list .listings a{
+    background-color: yellow;
+}
+.main_list .listings .child_ul a{
+    background-color: green;
+}
 .main_list .listings .child_ul{
     position: absolute;
     width: 200px;
@@ -104,12 +116,7 @@ li{
     bottom: 5px;
 }
 
-.main_list a{
-    width: 100%;
-    display: inline-block;
-    padding: 0 20px;
-    border: 1px solid #fff;
-}
+
 
 .img-container{
     position: relative;
