@@ -51,7 +51,7 @@ header li{
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 .nav .main_list{
     width: 150px;
