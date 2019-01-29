@@ -30,6 +30,8 @@ a{
     /* display: none; */
 }
 header{
+    position: relative;
+
     height: 50px;
     line-height: 50px;
     background-color: #fff;
@@ -44,10 +46,10 @@ header a{
 }
 header li{
     list-style-type: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .nav{
-    position: relative;
+    /* position: relative; */
     height: 30px;
     /* line-height: 30px; */
     display: flex;
@@ -60,17 +62,20 @@ header li{
 }
 
 .nav ul{
-    width: 80px;
-    position: relative;
+    width: 200px;
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    /* display: none; */
+    left: -200px;
     transition: left .256s;
-    top: -25px;
-    left: -100px;
+    background-color: #45b7b8;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 .nav:hover ul{
-    display: block;
-    position: absolute;
-    /* transform: translateX(200px); */
-    left: 0px;
+    display: list-item;
+    left: 0;
 }
 .hamburger{
     position: relative;
@@ -94,8 +99,11 @@ header li{
 }
 
 ul a{
-    color: red;
-
+    /* color: red; */
+    width: 100%;
+    display: inline-block;
+    padding: 0 20px;
+    border: 1px solid #fff;
 }
 
 .img-container{
