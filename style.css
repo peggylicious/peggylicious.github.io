@@ -19,7 +19,7 @@ p{
     font-family: 'Open Sans', sans-serif;
 }
 a{
-    text-decoration: navajowhite;
+    text-decoration: none !important;
 }
 .container-1{
     height: 100vh;
