@@ -26,22 +26,78 @@ a{
     margin: 0 20px;
     background-color: #45b7b8;
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+    overflow: hidden;
     /* display: none; */
 }
 header{
     height: 50px;
-    /* line-height: 50px; */
+    line-height: 50px;
     background-color: #fff;
-}
-header{
     display: flex;
-    justify-content: center;
     align-items: center;
+    /* padding-left: 10px; */
 }
+
 header a{
-    padding: 0 14px;
+    /* padding: 0 14px; */
     color: #000;
 }
+header li{
+    list-style-type: none;
+    border: 1px solid red;
+}
+.nav{
+    position: relative;
+    height: 30px;
+    /* line-height: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* line-height: normal; */
+    vertical-align: middle;
+    width: 30px;
+    background-color: black;
+}
+
+.nav ul{
+    width: 80px;
+    position: relative;
+    transition: left .256s;
+    top: -25px;
+    left: -100px;
+}
+.nav:hover ul{
+    display: block;
+    position: absolute;
+    /* transform: translateX(200px); */
+    left: 0px;
+}
+.hamburger{
+    position: relative;
+    width: 15px;
+    height: 2px;
+    background-color: yellow;
+}
+
+.hamburger::before, .hamburger::after{
+    content: "";
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    background-color: yellow;
+}
+.hamburger::before{
+    top: 5px;
+}
+.hamburger::after{
+    bottom: 5px;
+}
+
+ul a{
+    color: red;
+
+}
+
 .img-container{
     position: relative;
     height: 50vh;
