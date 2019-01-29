@@ -53,6 +53,24 @@ header li{
     vertical-align: middle;
     border: 1px solid #000;
 }
+.nav .main_list{
+    width: 150px;
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    left: -150px;
+    transition: left .256s;
+    background-color: #45b7b8;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
+}
+
+.nav:hover .main_list{
+    display: list-item;
+    left: 0;
+}
+.nav .slide_left{
+    z-index: 1;
+}
 li{
     position: relative;
 }
@@ -61,39 +79,28 @@ li{
     display: inline-block;
     padding: 0 20px;
     border: 1px solid #fff;
-}
-.main_list .listings a{
     background-color: yellow;
+
 }
 .main_list .listings .child_ul a{
     background-color: green;
 }
+.main_list .listings .child_ul a:hover{
+    background-color: #072627;
+}
+.slide_left a:hover{
+    background-color: #072627;
+}
 .main_list .listings .child_ul{
     position: absolute;
-    width: 200px;
+    width: 100px;
     z-index: -8;
-    left: -200px;
+    left: -100px;
     top: 0;
-    transition: left 3s;
+    transition: left .256s;
 }
 .main_list .listings:hover ul{
-    left: 200px;
-}
-
-.nav .main_list{
-    width: 200px;
-    top: 0;
-    height: 100vh;
-    position: absolute;
-    left: -200px;
-    transition: left .256s;
-    background-color: #45b7b8;
-    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
-    z-index: 1;
-}
-.nav:hover .main_list{
-    display: list-item;
-    left: 0;
+    left: 150px; /* This is because it's initial left position starts at 0 of containing element and is 100px away. There is a deficit of 50px in container*/
 }
 .hamburger{
     position: relative;
