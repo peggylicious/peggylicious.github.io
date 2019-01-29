@@ -27,7 +27,6 @@ a{
     background-color: #45b7b8;
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
     overflow: hidden;
-    /* display: none; */
 }
 header{
     position: relative;
@@ -37,51 +36,58 @@ header{
     background-color: #fff;
     display: flex;
     align-items: center;
-    /* padding-left: 10px; */
+    padding-left: 10px;
 }
 
 header a{
-    /* padding: 0 14px; */
     color: #000;
 }
 header li{
     list-style-type: none;
-    /* border: 1px solid red; */
 }
 .nav{
-    /* position: relative; */
     height: 30px;
-    /* line-height: 30px; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* line-height: normal; */
     vertical-align: middle;
-    width: 30px;
-    background-color: black;
+    border: 1px solid #000;
+}
+li{
+    position: relative;
+}
+.main_list .listings .child_ul{
+    position: absolute;
+    width: 200px;
+    z-index: -8;
+    left: -200px;
+    top: 0;
+    transition: left 3s;
+}
+.main_list .listings:hover ul{
+    left: 200px;
 }
 
-.nav ul{
+.nav .main_list{
     width: 200px;
     top: 0;
     height: 100vh;
     position: absolute;
-    /* display: none; */
     left: -200px;
     transition: left .256s;
     background-color: #45b7b8;
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
     z-index: 1;
 }
-.nav:hover ul{
+.nav:hover .main_list{
     display: list-item;
     left: 0;
 }
 .hamburger{
     position: relative;
-    width: 15px;
+    width: 40px;
     height: 2px;
-    background-color: yellow;
+    background-color: #f00;
 }
 
 .hamburger::before, .hamburger::after{
@@ -89,7 +95,7 @@ header li{
     width: 15px;
     height: 2px;
     position: absolute;
-    background-color: yellow;
+    background-color: #f00;
 }
 .hamburger::before{
     top: 5px;
@@ -98,8 +104,7 @@ header li{
     bottom: 5px;
 }
 
-ul a{
-    /* color: red; */
+.main_list a{
     width: 100%;
     display: inline-block;
     padding: 0 20px;
